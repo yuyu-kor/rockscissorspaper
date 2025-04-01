@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.box {
+    border: 4px solid lightgray;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* 이미지 스타일 */
+.item-img {
+    width: 9rem;
+    margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /* 박스 묶음 레이아웃 */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box.win {
+    border-color: green;
+}
+.box.lose {
+    border-color: red;
+}
+.box.tie {
+    border-color: goldenrod;
 }
 
-.App-link {
-  color: #61dafb;
+.result-text.win {
+    color: green;
+}
+.result-text.lose {
+    color: red;
+}
+.result-text.tie {
+    color: goldenrod;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.score-board .win{
+    color: green;
+}
+.score-board .lose {
+    color: red;
+}
+.score-board .divider {
+    color: #444;
+}
+
+.icon-btn {
+    all: unset;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.icon-img {
+    width: 55px;
+    height: 55px;
+}
+
+.reset-btn {
+    all: unset;
+    cursor: pointer;
+}
+
+.reset-btn img {
+    width: 45px;
+    height: 45px;
+}
+
+.reset-btn:hover {
+    transform: scale(1.1);
 }
