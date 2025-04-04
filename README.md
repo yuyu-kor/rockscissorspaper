@@ -1,4 +1,4 @@
-# ⛅ RockScissorsPaper Game
+# RockScissorsPaper Game
 
 간단하게 즐기는 가위바위보 게임입니다. React로 제작했으며, 컴퓨터와 무제한 가위바위보가 가능합니다.
 
